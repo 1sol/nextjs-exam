@@ -8,12 +8,12 @@ import { PostCard } from "../components";
 interface PostsProps {
   posts: Array<PostDto>;
 }
-
-const Posts: React.FC<PostsProps> = ({ posts }) => {
+ 
+const Posts: React.FC<PostsProps> = ({ posts }) => {1
   return (
     <>
-      <Head>
-        <title>NextJS. Posts page</title>
+      <Head> 
+        <title>posts page</title>
         <meta name="description" content="Posts page description" />
       </Head>
       <h1>Posts page</h1>

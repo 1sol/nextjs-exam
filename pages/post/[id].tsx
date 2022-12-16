@@ -16,7 +16,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
     <>
       <Head>
         <title>{post.title}</title>
-        <meta name="description" content={post.subTitle} />
+        <meta name="desc ription" content={post.subTitle} />
       </Head>
       <p>Post: {query.id}</p>
       <h2>{post.title}</h2>

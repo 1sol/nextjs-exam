@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <>
       <Head>
@@ -11,4 +11,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

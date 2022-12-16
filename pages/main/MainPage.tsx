@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Button from "@mui/material/Button";
 
-const Home: NextPage = () => {
+const MainPage: NextPage = () => {
   return (
     <div>
       <Button variant="contained">Contained</Button>
@@ -10,4 +10,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default MainPage;
