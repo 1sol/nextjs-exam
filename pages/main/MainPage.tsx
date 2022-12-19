@@ -1,13 +1,8 @@
 import type { NextPage } from "next";
-import Button from "@mui/material/Button";
+import { Layout } from "@components/container";
 
 const MainPage: NextPage = () => {
-  return (
-    <div>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
-    </div>
-  );
+  return <Layout isVisibleHeader isVisibleFooter isVisibleBottomTab></Layout>;
 };
 
 export default MainPage;

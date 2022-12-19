@@ -26,8 +26,10 @@
     "eslint-config-next": "13.0.3",
     "express": "^4.18.2",
     "next": "13.0.3",
+    "node-sass": "^8.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.57.0",
     "shortid": "^2.2.16",
     "styled-components": "^5.3.6",
     "typescript": "4.8.4"
