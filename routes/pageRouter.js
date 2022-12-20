@@ -1,20 +1,22 @@
-import React from "react";
+import React, { Component } from "react";
 import Link from "next/link";
 import shortid from "shortid";
 import routeConfigs from "./routeConfigs";
 import MainPage from "@pages/main";
 
-const PageRouter = () => {
+export const REDIRECT_PATH = "/";
+
+function PageRouter() {
   return (
     <div>
-      {routeConfigs.map(({ component: path, title }) => {
+      {routeConfigs.map(({ path, title }) => (
         <Link key={shortid.generate()} href={path}>
-          <a>{title}</a>
-        </Link>;
-      })}
+          {title}
+        </Link>
+      ))}
       <MainPage />
     </div>
   );
-};
+}
 
 export default PageRouter;

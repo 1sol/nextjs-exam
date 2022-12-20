@@ -1,6 +1,15 @@
 :root {
-  --pc-padding-horizontal: calc((100vw - 480px) / 2);
+  // layout
+  --pc-padding-horizontal: calc(50vw - 240px);
   --mobile-padding-horizontal: calc(0vw);
 
+  // bottom tab
   --tabbar-height: 70px;
+
+  --layout-width: 480px;
+
+  --header-height: 56px;
+
+  --offset-top: 56px;
+  --offset-bottom: 70px;
 }

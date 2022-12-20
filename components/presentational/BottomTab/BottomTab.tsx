@@ -11,8 +11,13 @@ import styled from "styled-components";
 const Contents = styled.div`
   position: fixed;
   bottom: 0;
+  min-height: var(--tabbar-height);
   background-color: ${({ theme }) => theme.colors.white};
   z-index: 100;
+
+  @media ${({ theme }) => theme.device.tabletMin} {
+    margin-inline: var(--pc-padding-horizontal);
+  }
 `;
 
 const BottomTab = () => {

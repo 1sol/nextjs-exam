@@ -78,7 +78,8 @@ const device = {
   mobileS: `only screen and (max-width: ${deviceSizes.mobileS})`,
   mobileM: `only screen and (max-width: ${deviceSizes.mobileM})`,
   mobileL: `only screen and (max-width: ${deviceSizes.mobileL})`,
-  tablet: `only screen and (max-width: ${deviceSizes.tablet})`,
+  tabletMin: `only screen and (min-width: ${deviceSizes.tablet})`,
+  tabletMax: `only screen and (max-width: ${deviceSizes.tablet})`,
   tabletL: `only screen and (max-width: ${deviceSizes.tabletL})`,
 };
 
