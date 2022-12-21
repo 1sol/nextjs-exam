@@ -1,15 +1,17 @@
 :root {
-  // layout
   --pc-padding-horizontal: calc(50vw - 240px);
   --mobile-padding-horizontal: calc(0vw);
 
-  // bottom tab
-  --tabbar-height: 70px;
+  --tabbar-height: 75px;
 
   --layout-width: 480px;
 
   --header-height: 56px;
 
-  --offset-top: 56px;
+  --offset-top: 60px;
   --offset-bottom: 70px;
+
+  --common-color: #44bbcd;
+  --white: #fff;
+  --gray: #646464;
 }

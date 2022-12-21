@@ -9,6 +9,8 @@ const HeaderContents = styled.div`
   z-index: 100;
   padding-inline: var(--pc-padding-horizontal);
   width: 100%;
+  ${({ theme }) => theme.common.flex};
+  ${({ theme }) => theme.common.flexVerticalCenter};
   background-color: ${({ theme }) => theme.colors.white};
 `;
 

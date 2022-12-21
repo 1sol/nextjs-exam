@@ -93,7 +93,7 @@ const colors = {
   lightGray2: "#cdcdcd",
   darkGray: "#999999",
   darkGray2: "#6e6e6e",
-  blue: "#7ec5ff",
+  blue: "#44bbcd",
   navy: "#162b51",
   purple: "#6956b2",
 };
