@@ -1,0 +1,134 @@
+.main {
+  padding-top: var(--offset-top);
+  background-color: #44bbcd94;
+
+  // section top
+  .section-top {
+    padding: 30px 0 55px 0;
+  }
+
+  .top-contents {
+    height: 190px;
+    cursor: pointer;
+
+    .icon-check {
+      margin-right: 3px;
+    }
+  }
+
+  // contents 영역
+  .section-contents {
+    position: relative;
+
+    &__inner {
+      position: absolute;
+      top: -15px;
+      width: 100%;
+      padding: 25px 0;
+      border-radius: 20px;
+
+      .section {
+        padding-top: 60px;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .more {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          background-image: url(../assets/icons/icon-arrow-next.svg);
+          background-size: contain;
+        }
+      }
+
+      // 톡톡 지식
+      .info {
+        .slider {
+          .slide-item {
+            height: 250px;
+
+            img {
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+
+      // 공지사항
+      .notice {
+        .notice-item {
+          ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: calc(100% / 2 - 10px);
+              height: 150px;
+              padding: 0 20px;
+              border-radius: 20px;
+              font-size: 18px;
+              background-color: #709ffede;
+              color: #fff;
+              font-weight: 500;
+              cursor: pointer;
+
+              p {
+                padding-top: 25px;
+                line-height: 1.4;
+                font-size: 13px;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // icon
+  .icon-check {
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/icons/icon-check.png);
+    background-size: contain;
+  }
+
+  .icon-record {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+
+  .icon-record.emotion {
+    background-image: url(../assets/icons/icon-main01.png);
+  }
+  .icon-record.food {
+    background-image: url(../assets/icons/icon-main02.png);
+  }
+  .icon-record.pill {
+    background-image: url(../assets/icons/icon-main03.png);
+  }
+  .icon-record.sleep {
+    background-image: url(../assets/icons/icon-main04.png);
+  }
+  .icon-record.fitness {
+    background-image: url(../assets/icons/icon-main05.png);
+  }
+  .icon-record.diary {
+    background-image: url(../assets/icons/icon-main06.png);
+  }
+}

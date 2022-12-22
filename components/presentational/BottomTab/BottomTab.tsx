@@ -14,6 +14,7 @@ const Contents = styled.div`
   left: 0;
   right: 0;
   min-height: var(--tabbar-height);
+  ${({ theme }) => theme.common.flexAlignCenter};
   background-color: ${({ theme }) => theme.colors.white};
   border-top: 1px solid ${({ theme }) => theme.colors.lightGray};
   z-index: 100;

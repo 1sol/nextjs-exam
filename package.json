@@ -30,6 +30,7 @@
     "node-sass": "^8.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-material-ui-carousel": "^3.4.2",
     "sass": "^1.57.0",
     "shortid": "^2.2.16",
     "styled-components": "^5.3.6",

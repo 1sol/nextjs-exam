@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import Grid from "@mui/material/Grid";
+import Link from "next/link";
 
 const HeaderContents = styled.div`
   position: fixed;
@@ -27,14 +28,14 @@ const Header = () => {
         <Grid container>
           <Grid item xs={4}>
             <Item>
-              <a>
+              <Link href="/">
                 <Image
                   src="/assets/common/logo.png"
                   width="100"
                   height="29"
                   alt=""
                 />
-              </a>
+              </Link>
             </Item>
           </Grid>
         </Grid>

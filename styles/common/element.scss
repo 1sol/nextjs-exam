@@ -1,17 +1,6 @@
 .title {
-  margin-bottom: 13px;
-}
-
-.main-contents {
-  background-color: var(--white);
-  border-radius: 20px;
-  box-shadow: 8px 2px 62px 0px rgb(34 51 89 / 7%);
-  transition: 0.8s;
-}
-
-.main-contents:hover {
-  box-shadow: 8px 2px 62px 0px rgb(34 51 89 / 13%);
-  transform: translateY(-10px);
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .contents-inner {
@@ -23,3 +12,14 @@
   flex-direction: column;
 }
 
+.box {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 8px 2px 62px 0px rgb(34 51 89 / 7%);
+  transition: 0.8s;
+}
+
+.box:hover {
+  box-shadow: 8px 2px 62px 0px rgb(34 51 89 / 13%);
+  transform: translateY(-10px);
+}
