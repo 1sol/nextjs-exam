@@ -5,14 +5,9 @@ import { motion } from "framer-motion";
 import Carousel from "react-material-ui-carousel";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  recordList,
-  slideList,
-  topContentsSubTitle,
-  topContentsTitle,
-} from "./config";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { infoList, recordList, slideList } from "./config";
 
 const Main = styled.div`
   .section-top {
@@ -96,12 +91,12 @@ const MainPage: FC = () => {
                 visible,
               }}
             >
-              <h1 className="title">{topContentsTitle}</h1>
+              <h1 className="title">오늘의 아토피 지수</h1>
               <div className="top-contents box">
                 <div className="contents-inner">
                   <div className="sub-title">
                     <i className="icon icon-check" />
-                    <span>{topContentsSubTitle}</span>
+                    <span>나의 아토피 피부염 체크해보기</span>
                   </div>
                   <p className="info">
                     여러가지 지표를 이용하여 <br /> 나의 아토피피부염의 증상을
@@ -142,43 +137,70 @@ const MainPage: FC = () => {
                   ))}
                 </ul>
               </div>
+            </div>
 
-              {/** contents - info */}
-              <div className="section info">
+            {/** contents - advertising */}
+            <div className="section advertising">
+              <div className="slider">
+                <Carousel
+                  PrevIcon={<ArrowBackIosNewIcon />}
+                  NextIcon={<ArrowForwardIosIcon />}
+                  activeIndicatorIconButtonProps={{
+                    style: {
+                      color: "#44bbcd",
+                      fontSize: "12px",
+                    },
+                  }}
+                  interval={4500}
+                  duration={500}
+                  animation="slide"
+                >
+                  {slideList.map((item, index) => (
+                    <Link key={index} href={item.link}>
+                      <div className="slide-item">
+                        <Image
+                          src={`/${item.image as any}`}
+                          alt=""
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
+                    </Link>
+                  ))}
+                </Carousel>
+              </div>
+            </div>
+
+            {/** contents - info */}
+            <div className="section info">
+              <div className="inner">
                 <h1 className="title">
                   톡톡 지식<button className="more">더보기</button>
                 </h1>
-                <div className="slider">
-                  <Carousel
-                    PrevIcon={<ArrowBackIosNewIcon />}
-                    NextIcon={<ArrowForwardIosIcon />}
-                    activeIndicatorIconButtonProps={{
-                      style: {
-                        color: "#44bbcd",
-                        fontSize: "12px",
-                      },
-                    }}
-                    autoPlay={false}
-                    animation="slide"
-                  >
-                    {slideList.map((item, index) => (
-                      <Link key={index} href={item.link}>
-                        <div className="slide-item">
-                          <Image
-                            src={`/${item.image as any}`}
-                            alt=""
-                            layout="fill"
-                            objectFit="cover"
-                          />
-                        </div>
-                      </Link>
-                    ))}
-                  </Carousel>
+                <div className="info-item__wrap">
+                  {infoList.map((item, index) => (
+                    <Link href={item.link} key={index} className="info-item">
+                      <div className="img">
+                        <Image
+                          src={`/${item.image as any}`}
+                          alt=""
+                          layout="fill"
+                          objectFit="contain"
+                        />
+                      </div>
+                      <div className="text">
+                        <span>{item.category}</span>
+                        <p>{item.title}</p>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
               </div>
+            </div>
 
-              {/** contents - notice */}
-              <div className="section notice">
+            {/** contents - notice */}
+            <div className="section notice">
+              <div className="inner">
                 <div className="notice-item">
                   <ul>
                     <li className="box">

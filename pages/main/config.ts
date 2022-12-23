@@ -1,6 +1,3 @@
-export const topContentsTitle = "오늘의 아토피 지수";
-export const topContentsSubTitle = "나의 아토피 피부염 체크해보기";
-
 export const recordList = [
   {
     title: "기분",
@@ -30,21 +27,48 @@ export const recordList = [
 
 export const slideList = [
   {
-    title: "아토피 톡톡 지식1",
-    description: "아토피란..",
     image: "assets/images/main-slider01.png",
     link: "",
   },
   {
-    title: "아토피 톡톡 지식2",
-    description: "아토피란..",
     image: "assets/images/main-slider02.png",
     link: "",
   },
   {
-    title: "아토피 톡톡 지식3",
-    description: "아토피란..",
-    image: "assets/images/main-slider03.png",
+    image: "assets/images/main-slider03.jpeg",
+    link: "",
+  },
+];
+
+export const infoList = [
+  {
+    image: "assets/images/main-info01.png",
+    category: "아토피 케어",
+    title: "All바른 아토피 케어 가이드",
+    link: "",
+  },
+  {
+    image: "assets/images/main-info02.png",
+    category: "아토피 케어",
+    title: "아토피 피부염, 진단&검사부터 치료까지!",
+    link: "",
+  },
+  {
+    image: "assets/images/main-info03.png",
+    category: "피부 지식",
+    title: "겨울철 건조한 피부 관리 어떻게 해야할까?",
+    link: "",
+  },
+  {
+    image: "assets/images/main-info01.png",
+    category: "아토피 지식",
+    title: "아토피 피부염, 원인부터 증상까지 제대로 알고 가세요!",
+    link: "",
+  },
+  {
+    image: "assets/images/main-info02.png",
+    category: "피부 지식",
+    title: "효과적인 보습 방법 전격 공개!",
     link: "",
   },
 ];

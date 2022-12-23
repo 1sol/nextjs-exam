@@ -4,7 +4,6 @@ import { Header } from "@components/container";
 import { BottomTab } from "@components/presentational";
 
 const Contents = styled.div`
-  height: 100vh;
   margin: 0 auto;
   box-shadow: 0 9px 20px #f6f6f6;
 

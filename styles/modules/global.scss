@@ -8,6 +8,17 @@
   color: var(--gray);
 }
 
-.icon svg {
+.bottom-tab .icon svg {
   fill: var(--common-color);
+}
+
+.header-inner {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-inner .icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #cbcbcb;
 }
