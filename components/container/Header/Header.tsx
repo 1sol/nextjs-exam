@@ -16,8 +16,6 @@ const HeaderContents = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
 `;
 
-const HeaderInner = styled.div``;
-
 const Item = styled.div``;
 
 const Header = () => {
@@ -27,12 +25,14 @@ const Header = () => {
         <Grid item xs={4}>
           <Item>
             <Link href="/">
-              <Image
-                src="/assets/common/logo.png"
-                width="100"
-                height="29"
-                alt=""
-              />
+              <a>
+                <Image
+                  src="/assets/common/logo.png"
+                  width="100"
+                  height="29"
+                  alt=""
+                />
+              </a>
             </Link>
           </Item>
         </Grid>

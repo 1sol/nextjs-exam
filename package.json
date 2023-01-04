@@ -1,14 +1,18 @@
 {
-  "name": "server",
+  "name": "nextjs-exam",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "static": "next build && next export"
   },
   "dependencies": {
+    "@capacitor/android": "^4.6.1",
+    "@capacitor/core": "^4.6.1",
+    "@capacitor/ios": "^4.6.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.9",
@@ -25,15 +29,20 @@
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
     "express": "^4.18.2",
-    "framer-motion": "^7.10.2",
-    "next": "13.0.3",
+    "framer-motion": "^7.10.3",
+    "next": "12.2.3",
+    "next-optimized-images": "^2.6.2",
+    "next-pwa": "^5.5.4",
     "node-sass": "^8.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-material-ui-carousel": "^3.4.2",
-    "sass": "^1.57.0",
+    "sass": "^1.57.1",
     "shortid": "^2.2.16",
     "styled-components": "^5.3.6",
     "typescript": "4.8.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^4.6.1"
   }
 }

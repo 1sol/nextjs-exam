@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { infoList, recordList, slideList } from "./config";
+import { infoList, recordList, slideList } from "../../config";
 
 const Main = styled.div`
   .section-top {
@@ -157,14 +157,16 @@ const MainPage: FC = () => {
                 >
                   {slideList.map((item, index) => (
                     <Link key={index} href={item.link}>
-                      <div className="slide-item">
-                        <Image
-                          src={`/${item.image as any}`}
-                          alt=""
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
+                      <a>
+                        <div className="slide-item">
+                          <Image
+                            src={`/${item.image as any}`}
+                            alt=""
+                            layout="fill"
+                            objectFit="cover"
+                          />
+                        </div>
+                      </a>
                     </Link>
                   ))}
                 </Carousel>
@@ -179,19 +181,22 @@ const MainPage: FC = () => {
                 </h1>
                 <div className="info-item__wrap">
                   {infoList.map((item, index) => (
-                    <Link href={item.link} key={index} className="info-item">
-                      <div className="img">
-                        <Image
-                          src={`/${item.image as any}`}
-                          alt=""
-                          layout="fill"
-                          objectFit="contain"
-                        />
-                      </div>
-                      <div className="text">
-                        <span>{item.category}</span>
-                        <p>{item.title}</p>
-                      </div>
+                    <Link href={item.link} key={index}>
+                      <a className="info-item">
+                        <div className="img">
+                          <Image
+                            src={`/${item.image as any}`}
+                            alt=""
+                            layout="fill"
+                            objectFit="contain"
+                            className="img"
+                          />
+                        </div>
+                        <div className="text">
+                          <span>{item.category}</span>
+                          <p>{item.title}</p>
+                        </div>
+                      </a>
                     </Link>
                   ))}
                 </div>

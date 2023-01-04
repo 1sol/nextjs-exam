@@ -11,7 +11,7 @@ function PageRouter() {
     <div>
       {routeConfigs.map(({ path, title }) => (
         <Link key={shortid.generate()} href={path}>
-          {title}
+          <a>{title}</a>
         </Link>
       ))}
       <MainPage />
