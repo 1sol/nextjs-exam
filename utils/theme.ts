@@ -1,4 +1,6 @@
-const calcRem = (size) => `${size / 16}rem`;
+import { createTheme } from "@mui/material/styles";
+
+const calcRem = (size: any) => `${size / 16}rem`;
 
 const common = {
   flex: `display: flex;`,
@@ -114,6 +116,14 @@ const align = {
   right: `text-align: right;`,
 };
 
+const muiTheme = createTheme({
+  palette: {
+    primary: {
+      main: "#44bbcd",
+    },
+  },
+});
+
 const theme = {
   common,
   fontSizes,
@@ -124,6 +134,7 @@ const theme = {
   colors,
   fontWeight,
   align,
+  muiTheme,
 };
 
 export default theme;

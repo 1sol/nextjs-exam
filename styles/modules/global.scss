@@ -1,3 +1,17 @@
+// header
+.header-inner {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.header-inner .icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #cbcbcb;
+}
+
+// bottom tab
 .bottom-tab .btn-bottom-tab {
   min-width: 95px;
   color: var(--common-color);
@@ -12,14 +26,26 @@
   fill: var(--common-color);
 }
 
-.header-inner {
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
+// textfield
+.textfield {
+  width: 100%;
 }
 
-.header-inner .icon svg {
-  width: 30px;
-  height: 30px;
-  fill: #cbcbcb;
+.textfield label.Mui-focused {
+  color: #44bbcd;
+}
+
+.textfield .Mui-focused svg {
+  fill: #44bbcd;
+}
+
+.textfield .MuiInput-root::after {
+  border-bottom: 2px solid #44bbcd;
+}
+.textfield .MuiInput-root:hover::after {
+  border-bottom: 2px solid #44bbcd;
+}
+
+// button
+.btn:hover {
 }

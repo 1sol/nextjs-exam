@@ -23,3 +23,35 @@
   box-shadow: 8px 2px 62px 0px rgb(34 51 89 / 13%);
   transform: translateY(-10px);
 }
+
+.btn {
+  width: 100%;
+  height: 45px;
+  border-radius: 30px;
+  font-size: 15px;
+  box-shadow: none;
+  transition: all 0s;
+  background-color: var(--common-color);
+}
+.btn:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: none;
+  background-color: #44bbcdcf;
+}
+
+.btn-kakao {
+  background-color: #f7e600;
+  color: #000;
+}
+.btn-kakao:hover {
+  background-color: #ffed00d6;
+}
+
+.btn-google {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: #000;
+}
+.btn-google:hover {
+  background-color: var(--border-color);
+}

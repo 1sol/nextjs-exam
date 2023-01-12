@@ -1,5 +1,11 @@
 .container {
   margin: 0 auto;
+  height: 100%;
+  box-shadow: 0 9px 20px #f6f6f6;
+
+  @media only screen and (min-width: 768px) {
+    width: 480px;
+  }
 }
 
 .section {

@@ -1,3 +1,4 @@
-import mainConfigs from "./mainConfig";
+import mainConfigs from "./mainConfigs";
+import authConfigs from "./authConfigs";
 
-export { mainConfigs };
+export { mainConfigs, authConfigs };

@@ -1,12 +1,13 @@
+import { useRouter } from "next/router";
 import Image from "next/image";
 import styled from "styled-components";
 import Grid from "@mui/material/Grid";
-import Link from "next/link";
 import PersonIcon from "@mui/icons-material/Person";
 
 const HeaderContents = styled.div`
   position: fixed;
   top: 0;
+  left: 0;
   min-height: var(--header-height);
   z-index: 100;
   padding-inline: var(--pc-padding-horizontal);
@@ -18,33 +19,68 @@ const HeaderContents = styled.div`
 
 const Item = styled.div``;
 
-const Header = () => {
+interface HeaderProps {
+  title?: string;
+  backMode?: boolean;
+  backBtn?: any;
+  onClickBackBtn?: (data: any) => void;
+  onClickHomeBtn?: () => void;
+  searchMode?: boolean;
+  enableSearch?: boolean;
+  homeMode?: boolean;
+  cancelMode?: boolean;
+  cancel?: any;
+  mypageMode?: boolean;
+  transparent?: boolean;
+}
+
+const Header: React.FC<HeaderProps> = (props) => {
+  const router = useRouter();
+  useRouter;
   return (
     <HeaderContents>
       <Grid container className="header-inner">
         <Grid item xs={4}>
           <Item>
-            <Link href="/">
-              <a>
+            {props.backMode ? (
+              <button onClick={props.onClickBackBtn || (() => router.back())}>
+                <Image
+                  src="/assets/icons/icon-back.png"
+                  width="25"
+                  height="25"
+                  alt="back"
+                />
+              </button>
+            ) : (
+              <button
+                onClick={
+                  props.onClickHomeBtn ||
+                  (() => {
+                    router.push("/");
+                  })
+                }
+              >
                 <Image
                   src="/assets/common/logo.png"
                   width="100"
                   height="29"
                   alt=""
                 />
-              </a>
-            </Link>
+              </button>
+            )}
           </Item>
         </Grid>
-        <Grid item>
-          <Item>
-            <button>
-              <i className="icon">
-                <PersonIcon />
-              </i>
-            </button>
-          </Item>
-        </Grid>
+        {props.mypageMode && (
+          <Grid item>
+            <Item>
+              <button>
+                <i className="icon">
+                  <PersonIcon />
+                </i>
+              </button>
+            </Item>
+          </Grid>
+        )}
       </Grid>
     </HeaderContents>
   );

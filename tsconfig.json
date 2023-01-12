@@ -23,6 +23,6 @@
       "@styles/*": ["styles/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "routes/pageRouter.js", "utils/theme.js", "routes/routeConfigs.js", "configs/index.js", "configs/mainConfig.js", "components/index.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "routes/pageRouter.js", "utils/theme.js", "routes/routeConfigs.js", "configs/index.js", "configs/mainConfigs.js", "components/index.ts"],
   "exclude": ["node_modules"]
 }
